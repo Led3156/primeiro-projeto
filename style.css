@@ -20,7 +20,8 @@ body{
     */
 
     /*backgroud: color image repeat position*/
-    background: var(--bg-url) no-repeat top center/cover;
+    background: var(--bg-url) no-repeat top center;
+    background-size: cover;
     
 
 }
