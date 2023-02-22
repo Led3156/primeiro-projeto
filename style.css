@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+:root {
+ --text-color: white;
+ --bg-url: url(./assets/bg.mobile-light.jpg);
+}
+.light {
+    --text-color:black;
+    --bg-url: url(./assets/bg.mobile-light.jpg);
+}
 body{
     /*background-image: url(./assets/bg-mobile.jpg);
     background-repeat: no-repeat;
@@ -12,12 +20,13 @@ body{
     */
 
     /*backgroud: color image repeat position*/
-    background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+    background: var(--bg-url) no-repeat top center/cover;
+    
 
 }
 body * {
     font-family: 'Inter', sans-serif;
-    color: white;
+    color: var(--text-color);
 }
 
 #container {
@@ -78,7 +87,7 @@ body * {
 
 ul li a:hover{
     background: rgba(255, 255, 255, 0.05);
-    border: 1.5px solid white;
+    border: 1.5px solid var(--text-color);
 
 }
 
@@ -107,4 +116,5 @@ ul li a:hover{
 footer {
     padding: 24px 0 ;
     text-align: center ;
+    font-size: 14px;
 }
